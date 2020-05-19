@@ -1,18 +1,20 @@
 import React from 'react'
-import { Router, Switch, Route, Redirect } from 'react-router-dom'
-import { pathComponents, paths } from './routesConfig'
+import { Router, Switch, Route } from 'react-router-dom'
 import history from './history'
+import MainPage from '../pages/mainPage/mainPage'
 
 export default function Routes() {
   return (
     <Router history={history}>
       <Switch>
-        <Redirect exact from="/" to={paths.home}></Redirect>
-        {pathComponents.map((item) => (
+        <Route path="/">
+          <MainPage />
+        </Route>
+        {/* {pathComponents.map((item) => (
           <Route exact key={item.path} path={item.path}>
             <item.component />
           </Route>
-        ))}
+        ))} */}
       </Switch>
     </Router>
   )
