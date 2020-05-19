@@ -1,12 +1,11 @@
 import React from 'react'
-import 'mainPage.scss'
+import './mainPage.scss'
 
 export default function MainPage(props: any) {
   return (
     <>
       <section className="page-header">
         <h1 className="project-name font-weight-bold">Ajeet Shah</h1>
-        <h2 className="project-tagline"></h2>
       </section>
 
       <section className="main-content">
@@ -106,6 +105,17 @@ export default function MainPage(props: any) {
       </section>
 
       <section className="footer-content"></section>
+      <a
+        href="https://www.webfreecounter.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          style={{ opacity: 0.1 }}
+          src="https://www.webfreecounter.com/hit.php?id=gvakfqq&nd=4&style=1"
+          alt="visitor counter"
+        />
+      </a>
     </>
   )
 }
