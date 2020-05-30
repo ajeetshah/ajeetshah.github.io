@@ -1,4 +1,0 @@
-{
-  "/v1/cars": "/cars",
-  "/v1/cars\\?title_like=:title_like": "/cars?title_like=:title_like"
-}
