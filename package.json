@@ -45,6 +45,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start-app": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "mock-api": "json-server -c mock/config.json mock/index.js",
     "clean": "rimraf build",
     "dev": "env-cmd -f envs/.env.dev react-scripts build",
